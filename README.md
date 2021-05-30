@@ -16,12 +16,12 @@ A POC application to submit and retrieve images
    - https://app.pluralsight.com/library/courses/securing-spring-data-rest-apis/table-of-contents
    - https://github.com/jzheaux/resolutions
    
-# How To
+## How To
 
  - Start keycloak `cd etc && docker-compose up -d`
  - Note keycloak takes about 3 minutes to start. 
  - The job service will not start correctly unless keycloak is running.
- - The keycloak admin URL is `http://localhost:8080/admin`
+ - The keycloak admin URL is `http://localhost:8080/auth`
  - Once keycloak has started the service can be started.
  - From project base directory start the job service `bash run.sh`
  - The requests must be authenticated. There are helper scripts to do this.
@@ -29,3 +29,8 @@ A POC application to submit and retrieve images
  - E.g. `bash docs/post_job.sh /home/jamesmcgarr/Pictures/test_image.png`
  - To get a job by ID there is a helper script.
  - E.g. `bash docs/get_job.sh 16`
+ - In this case the job ID is 16.
+
+## Dependencies
+
+ - jq must be installed. linux `sudo apt-get install jq`. Mac `brew install jq`
