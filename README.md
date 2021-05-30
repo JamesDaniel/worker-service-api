@@ -22,14 +22,18 @@ A POC application to submit and retrieve images
  - Note keycloak takes about 3 minutes to start. 
  - The job service will not start correctly unless keycloak is running.
  - The keycloak admin URL is `http://localhost:8080/auth`
+ - The keycloak Ui user is `admin`. The password is `password`.
+ - Private user data can be viewed when logged in as admin. 
  - Once keycloak has started the service can be started.
  - From project base directory start the job service `bash run.sh`
  - The requests must be authenticated. There are helper scripts to do this.
- - To post run this script with an absolute path.
+ - To post an image, run this script with an absolute path.
  - E.g. `bash docs/post_job.sh /home/jamesmcgarr/Pictures/test_image.png`
  - To get a job by ID there is a helper script.
  - E.g. `bash docs/get_job.sh 16`
  - In this case the job ID is 16.
+ 
+ Video Link on <a href="https://drive.google.com/file/d/18nvdEdO1l60KOf5djILPEvalwO2bt6qz/view?usp=sharing">Google Drive</a>. The streaming quality is poor so downloading it is recommended.
 
 ## Dependencies
 
