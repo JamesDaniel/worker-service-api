@@ -24,7 +24,6 @@ public class JobController {
 
     @GetMapping(value = "api/v1/job/{id}/status", produces = "application/json", consumes = "application/json")
     public Job getJob(@PathVariable Long id, @AuthenticationPrincipal Jwt jwt) {
-        System.out.println(jwt.getClaims());
         return jobService.getJobById(id).get(); // `RUNNING`,`SUCCESS`,`FAILED`
     }
 
