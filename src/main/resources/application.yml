@@ -1,8 +1,8 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:9999/auth/realms/one
+          issuer-uri: http://localhost:8080/auth/realms/one
