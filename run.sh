@@ -1,2 +1,2 @@
 #!/bin/bash
-docker-compose up --build --force-recreate -d
+bash mvnw package && docker-compose up --build --force-recreate -d
